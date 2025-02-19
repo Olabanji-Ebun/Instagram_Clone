@@ -66,7 +66,7 @@ class Post extends StatelessWidget {
                 ),
 
             //comments
-            Image.asset("assets/icons/comment.png", height: 20, width: 20),
+            Image.asset("assets/icons/comment.png", height: 50, width: 50),
             const Text(
               "36.9k",
               style: TextStyle(fontWeight: FontWeight.w600),
@@ -78,7 +78,7 @@ class Post extends StatelessWidget {
                 ),
 
             // Share
-            Image.asset("assets/icons/share.png", height: 20, width:20),
+            Image.asset("assets/icons/share.png", height: 50, width:50),
             const Text(
               "25.7k"
               ),
