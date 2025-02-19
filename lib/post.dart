@@ -6,7 +6,7 @@ class Post extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Column(
+    return  Column(
       children: [
         //name
         Row(
@@ -39,9 +39,10 @@ class Post extends StatelessWidget {
               Spacer(),
               Icon(Icons.more_horiz)
           ],
-        )
+        ),
 
         //picture
+        Image.asset("assets/images/ronaldo.jpg"),
 
         //stats(likes, comments, shares)
 
