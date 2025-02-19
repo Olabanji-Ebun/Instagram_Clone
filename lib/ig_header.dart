@@ -13,7 +13,7 @@ class IgHeader extends StatelessWidget {
               Image.asset(
                 "assets/images/ig.jpg",
                 width: 120.0,
-                height: 56,
+                height: 56, 
               ),
 
               const Row(

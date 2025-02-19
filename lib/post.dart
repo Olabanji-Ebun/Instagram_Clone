@@ -41,11 +41,49 @@ class Post extends StatelessWidget {
           ],
         ),
 
+        const SizedBox(
+          height: 10,
+        ),
+
         //picture
         Image.asset("assets/images/ronaldo.jpg"),
 
         //stats(likes, comments, shares)
 
+        Row(
+          children: [
+            
+            //like
+            const Icon(Icons.favorite_border_outlined),
+            const Text(
+              "5.4M",
+              style: TextStyle(fontWeight: FontWeight.w600),
+              ),
+              
+
+              const SizedBox(
+                width: 16.0
+                ),
+
+            //comments
+            Image.asset("assets/icons/comment.png", height: 20, width: 20),
+            const Text(
+              "36.9k",
+              style: TextStyle(fontWeight: FontWeight.w600),
+              ),
+
+
+              const SizedBox(
+                width: 16.0
+                ),
+
+            // Share
+            Image.asset("assets/icons/share.png", height: 20, width:20),
+            const Text(
+              "25.7k"
+              ),
+          ],
+        )
 
         //Caption
       ],
