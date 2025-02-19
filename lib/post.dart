@@ -46,7 +46,7 @@ class Post extends StatelessWidget {
         ),
 
         //picture
-        Image.asset("assets/images/ronaldo.jpg"),
+        Image.asset("assets/images/ronaldo1.jpg"),
 
         //stats(likes, comments, shares)
 
