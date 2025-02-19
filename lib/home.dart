@@ -33,7 +33,17 @@ class Home extends StatelessWidget {
                 Story(),
               ],
             ),
-          )
+          ),
+          
+
+          SizedBox(
+            height: 20,
+          ),
+
+          //Posts
+
+          Post(),
+
         ],
       ),
     );

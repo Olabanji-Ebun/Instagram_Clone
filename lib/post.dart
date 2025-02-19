@@ -6,19 +6,45 @@ class Post extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.symmetric(vertical: 16.0),
-      child: Container(
-        width: 300,
-        height: 300,
-        color: Colors.pink,
-        child: Center(
-          child: Text(
-            item.toString(),
-            style: const TextStyle(fontSize: 36),
-          ),
-        ),
-      ),
+    return const Column(
+      children: [
+        //name
+        Row(
+          children: [
+            CircleAvatar(
+              radius: 25,
+              backgroundColor: Colors.deepOrange,
+              child: Text(
+                'GOAT',
+                style: TextStyle(fontSize: 12, fontFamily: "monospace"),
+                ),
+            ),
+            Padding(
+              padding: EdgeInsets.symmetric(horizontal: 8.0),
+              child: Text(
+                "cristiano",
+                style: TextStyle(
+                  fontSize: 16,
+                  fontWeight: FontWeight.w900,
+                  color: Colors.black
+                ),
+              ),
+            ),
+            Icon(
+              Icons.verified_sharp,
+              color: Color.fromARGB(255, 6, 11, 143),
+              size: 16,
+              ),
+          ],
+        )
+
+        //picture
+
+        //stats(likes, comments, shares)
+
+
+        //Caption
+      ],
     );
   }
 }

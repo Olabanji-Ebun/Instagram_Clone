@@ -11,7 +11,7 @@ class IgHeader extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Image.asset(
-                "assets/ig.jpg",
+                "assets/images/ig.jpg",
                 width: 120.0,
                 height: 56,
               ),
