@@ -32,9 +32,12 @@ class Post extends StatelessWidget {
             ),
             Icon(
               Icons.verified_sharp,
-              color: Color.fromARGB(255, 6, 11, 143),
+              color: Color.fromARGB(255, 0, 149,246),
               size: 16,
               ),
+
+              Spacer(),
+              Icon(Icons.more_horiz)
           ],
         )
 
