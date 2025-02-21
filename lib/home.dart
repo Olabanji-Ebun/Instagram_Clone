@@ -13,7 +13,7 @@ class Home extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: ListView(
-        padding: const EdgeInsets.symmetric(horizontal: 8.0),
+        padding: const EdgeInsets.symmetric(horizontal: 1.0),
         children: [
           // Instagram Header
           IgHeader(),
@@ -42,6 +42,8 @@ class Home extends StatelessWidget {
 
           //Posts
 
+          Post(),
+          Post(),
           Post(),
 
         ],
