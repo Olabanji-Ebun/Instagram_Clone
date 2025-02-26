@@ -6,7 +6,12 @@ class Reels extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
-      body: Text("Reels"),
+      body: Center(
+        child: Text(
+          "Reels",
+          style: TextStyle(fontSize: 32),
+        ),
+       ),
     );
   }
 }

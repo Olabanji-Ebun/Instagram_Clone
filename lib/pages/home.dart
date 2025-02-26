@@ -49,7 +49,6 @@ class Home extends StatelessWidget {
 
         ],
       ),
-      bottomNavigationBar: Bottombar(),
     );
   }
 }

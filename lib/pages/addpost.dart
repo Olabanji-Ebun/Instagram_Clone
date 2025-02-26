@@ -6,7 +6,12 @@ class Addpost extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
-      body: Text("Add Post"),
+      body: Center(
+        child: Text(
+          "Add post",
+          style: TextStyle(fontSize: 32),
+        ),
+      ),
     );
   }
 }

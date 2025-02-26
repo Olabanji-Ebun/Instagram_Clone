@@ -11,36 +11,40 @@ class Bottombar extends StatelessWidget {
       BottomNavigationBarItem(
         icon: ImageIcon(
           AssetImage('assets/icons/home.png'),
-          size: 60,
-          color: Colors.blueGrey,
+          size: 30,
+          color: Colors.black,
         ),
         label: "",
       ),
       BottomNavigationBarItem(
         icon: ImageIcon(
           AssetImage('assets/icons/search.png'),
-          size: 60,
+          size: 30,
+          color: Colors.black,
         ),
         label: "",
       ),
       BottomNavigationBarItem(
         icon: ImageIcon(
           AssetImage('assets/icons/add.png'),
-          size: 60,
+          size: 30,
+          color: Colors.black,
         ),
         label: "",
       ),
       BottomNavigationBarItem(
         icon: ImageIcon(
           AssetImage('assets/icons/reel.png'),
-          size: 60,
+          size: 30,
+          color: Colors.black,
         ),
         label: "",
       ),
       BottomNavigationBarItem(
         icon: ImageIcon(
           AssetImage('assets/icons/user.png'),
-          size: 60,
+          size: 30,
+          color: Colors.black,
         ),
         label: "",
       ),
