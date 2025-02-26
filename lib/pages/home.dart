@@ -43,10 +43,14 @@ class Home extends StatelessWidget {
 
           //Posts
 
-          Post(),
-          Post(),
-          Post(),
-
+        Expanded(
+          child: ListView.builder(
+            shrinkWrap: true,
+            itemCount: 20,
+            itemBuilder: (context, index) => const Post(),
+          ),
+        ),
+        
         ],
       ),
     );
