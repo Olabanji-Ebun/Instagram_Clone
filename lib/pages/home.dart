@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:instagram_clone/bottom.dart';
 import 'package:instagram_clone/ig_header.dart';
 // ignore: unused_import
 import 'package:instagram_clone/post.dart';
@@ -11,7 +12,7 @@ class Home extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return Scaffold(    
       body: ListView(
         padding: const EdgeInsets.symmetric(horizontal: 1.0),
         children: [
@@ -48,6 +49,7 @@ class Home extends StatelessWidget {
 
         ],
       ),
+      bottomNavigationBar: Bottombar(),
     );
   }
 }

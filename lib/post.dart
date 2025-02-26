@@ -36,6 +36,23 @@ class Post extends StatelessWidget {
               size: 16,
               ),
 
+              Container(
+                width: 20,
+                height: 20,
+                decoration: BoxDecoration(
+                  shape: BoxShape.circle,
+                  color: Colors.black,
+                ),
+              ),
+
+              SizedBox(
+                height: 10,
+              ),
+
+              Text(
+                "following"
+              ),
+
               Spacer(),
               Icon(Icons.more_horiz)
           ],
