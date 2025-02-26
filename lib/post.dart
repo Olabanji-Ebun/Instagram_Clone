@@ -36,9 +36,13 @@ class Post extends StatelessWidget {
               size: 16,
               ),
 
+              SizedBox(
+                width: 10,
+              ),
+
               Container(
-                width: 20,
-                height: 20,
+                width: 5,
+                height: 5,
                 decoration: BoxDecoration(
                   shape: BoxShape.circle,
                   color: Colors.black,
@@ -46,7 +50,7 @@ class Post extends StatelessWidget {
               ),
 
               SizedBox(
-                height: 10,
+                width: 4,
               ),
 
               Text(
