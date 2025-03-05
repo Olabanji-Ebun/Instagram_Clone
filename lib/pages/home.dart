@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:instagram_clone/bottom.dart';
+// import 'package:instagram_clone/bottom.dart';
 import 'package:instagram_clone/ig_header.dart';
 // ignore: unused_import
 import 'package:instagram_clone/post.dart';
@@ -47,7 +47,7 @@ class Home extends StatelessWidget {
           child: ListView.builder(
             shrinkWrap: true,
             itemCount: 20,
-            itemBuilder: (context, index) => const Post(),
+            itemBuilder: (context, index) =>  Post(),
           ),
         ),
         

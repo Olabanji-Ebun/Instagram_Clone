@@ -1,9 +1,16 @@
 import 'package:flutter/material.dart';
 
-class Post extends StatelessWidget {
+class Post extends StatefulWidget {
   final int? item;
   const Post({super.key, this.item});
 
+  @override
+  State<Post> createState() => _PostState();
+}
+
+class _PostState extends State<Post> {
+  int numOfLikes = 0;
+  bool isLiked = false;
   @override
   Widget build(BuildContext context) {
     return  Column(
@@ -66,8 +73,18 @@ class Post extends StatelessWidget {
           height: 10,
         ),
 
+        GestureDetector(
+          onDoubleTap: () {
+            setState(() {
+              numOfLikes = 1;
+              isLiked = true;
+            });
+          },
+          child: Image.asset("assets/images/ronaldo1.jpg"),
+        ),
+
         //picture
-        Image.asset("assets/images/ronaldo1.jpg"),
+        
 
         //stats(likes, comments, shares)
 
@@ -79,12 +96,31 @@ class Post extends StatelessWidget {
                 children: [
 
                   //like
-                  const Icon(Icons.favorite_border_outlined),
-                  const Text(
-                    "5.4M",
-                    style: TextStyle(fontWeight: FontWeight.w600),
-                    ),
-                    
+                  isLiked
+                  ?GestureDetector(
+                    onTap: () => {
+                      setState(() {
+                        isLiked = !isLiked;
+                        numOfLikes = 0;
+                      })
+                    },
+                    child: const Icon(Icons.favorite,color: Color.fromARGB(255, 255, 17, 0),),
+                  )
+
+                  :GestureDetector(
+                    onTap: () => {
+                      setState(() {
+                        isLiked = !isLiked;
+                        numOfLikes = 1;
+                      })
+                    },
+                    child: const Icon(Icons.favorite_border_outlined),
+                  ),
+
+                  Text(
+                    numOfLikes.toString(),
+                    style: const TextStyle(fontWeight: FontWeight.w600),
+                  ),
 
                     const SizedBox(
                       width: 16.0
