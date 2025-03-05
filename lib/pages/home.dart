@@ -42,15 +42,13 @@ class Home extends StatelessWidget {
           ),
 
           //Posts
-
-        Expanded(
-          child: ListView.builder(
-            shrinkWrap: true,
-            itemCount: 20,
-            itemBuilder: (context, index) =>  Post(),
-          ),
+        ListView.builder(
+          shrinkWrap: true, // ✅ Allows it to take the needed space
+          physics: NeverScrollableScrollPhysics(), // ✅ Prevents conflict with parent ListView
+          itemCount: 20,
+          itemBuilder: (context, index) => Post(),
         ),
-        
+      
         ],
       ),
     );
